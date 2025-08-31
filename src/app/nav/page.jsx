@@ -32,6 +32,10 @@ export default function Nav() {
           <Link href="/login">
             <li>Leaderboard</li>
           </Link>
+          <li className="flex items-center gap-3 mt-[-3px]">
+            <Image src={"/fire.png"} width={20} height={20} alt="fire" className="mt-[-2px]"></Image>
+            <p className="text-orange-700">20</p>
+          </li>
           <Link href="/login">
             <li>Login</li>
           </Link>
