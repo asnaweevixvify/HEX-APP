@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <div>
-      <ul className="flex bg-[#00BF63] items-center justify-around">
+      <ul className="flex bg-[#00BF63] items-center justify-around fixed w-[100vw]">
         <div>
           <Link href="/">
             <li>
@@ -26,7 +26,7 @@ export default function Nav() {
           <li className="flex">
             Exam <RiArrowDropDownLine size={30} />
           </li>
-          <Link href="/login">
+          <Link href="/challenge/selectmode">
             <li>Challenge</li>
           </Link>
           <Link href="/login">

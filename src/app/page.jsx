@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center mt-[80px] pb-[100px]">
+    <div className="flex justify-center items-center b-[100px] h-[100vh]">
       <video
         autoPlay
         loop

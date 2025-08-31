@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="flex justify-center items-center mt-10 gap-5">
+    <div className="flex justify-center items-center gap-5 h-[100vh]">
       <div className="flex flex-col gap-5">
         <h1 className="text-black text-3xl font-bold">
           เนื้อหาที่จะสร้างข้อสอบ

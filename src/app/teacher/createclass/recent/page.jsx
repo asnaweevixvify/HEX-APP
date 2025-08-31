@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Page() {
   const [num, setNum] = useState([1, 2, 3]);
   return (
-    <div className="w-[50vw] flex flex-col gap-[30px]">
+    <div className="w-[50vw] flex flex-col gap-[30px] mt-20">
       <input
         type="text"
         placeholder="🔍 ค้นหาคลาส"
@@ -18,9 +18,9 @@ export default function Page() {
         <h1 className="text-black">1 วันที่แล้ว</h1>
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center justify-center gap-4">
-            {num.map((e) => {
+            {num.map((e,index) => {
               return (
-                <div className="flex justify-evenly items-center w-[100px] bg-gray-200 p-2 rounded-xl">
+                <div className="flex justify-evenly items-center w-[100px] bg-gray-200 p-2 rounded-xl" key={index}>
                   <FaFile style={{ color: "black" }} />
                   <h2 className="text-black">ม.4/{e}</h2>
                 </div>

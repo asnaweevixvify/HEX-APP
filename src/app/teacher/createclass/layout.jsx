@@ -19,7 +19,7 @@ function LayoutContent({ children }) {
   return (
     <div
       style={{ backgroundColor: "#E8E8E8", width: "100vw" }}
-      className="flex justify-center items-center gap-[5%] pb-[5%]"
+      className="flex justify-center items-center gap-[5%] pb-[5%] h-[100vh]"
     >
       <Sidebar />
       {status && <Createpopup />}

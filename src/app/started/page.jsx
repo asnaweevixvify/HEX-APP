@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="flex items-center justify-center mt-[90px] gap-[60px]">
+    <div className="flex items-center justify-center gap-[60px] h-[100vh]">
       <div className="flex flex-col items-center justify-center gap-[20px] p-[20px]">
         <Link href="teacher/selectmode">
           <Image

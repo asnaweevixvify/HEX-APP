@@ -8,9 +8,9 @@ export default function Sidebar() {
   const { changeStatus } = useBar();
   const [status, setStatus] = useState(false);
   return (
-    <div className="flex flex-col mt-[-5%]">
+    <div className="flex flex-col">
       <button
-        className="bg-white text-black p-[20px] rounded-2xl text-xl flex items-center gap-[10px]"
+        className="bg-white text-black p-[20px] rounded-2xl text-xl flex items-center gap-[10px] mt-[-100px]"
         onClick={() => {
           changeStatus(!status);
           setStatus(!status);

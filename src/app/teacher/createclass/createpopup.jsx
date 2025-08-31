@@ -2,10 +2,14 @@
 import { FaPlus } from "react-icons/fa";
 import Image from "next/image";
 import { MdOutlineContentCopy } from "react-icons/md";
+import { useBar } from "./context/Sidebarcontext";
+import { useState } from "react";
 
 export default function Createpopup() {
+  const { changeStatus } = useBar();
+  const [status,setStatus] = useState(true)
   return (
-    <div className="absolute bg-white w-[40vw] h-[65vh] rounded-2xl p-5 border-3 border-black ">
+    <div className="absolute bg-white w-[40vw] h-[65vh] rounded-2xl p-5 border-3 border-black top-50">
       <h1 className="text-black text-2xl font-bold">ห้องเรียนใหม่</h1>
       <div className="flex justify-center gap-20 mt-5">
         <div className="flex flex-col">
@@ -14,7 +18,8 @@ export default function Createpopup() {
               <p className="text-black">ชื่อห้องเรียน</p>
               <input
                 type="text"
-                className="border-2 border-[#4251FF] h-[45px] rounded-[5px] text-black"
+                className="border-2 border-[#4251FF] h-[45px] rounded-[5px] text-black pl-2"
+                placeholder="ใส่ชื่อห้องเรียน"
               ></input>
             </div>
             <div className="flex flex-col gap-3">
@@ -30,7 +35,8 @@ export default function Createpopup() {
               <p className="text-black">อัพโหลดสไลด์</p>
               <input
                 type="text"
-                className="border-2 border-[#4251FF] h-[45px] rounded-[5px] text-black"
+                className="border-2 border-[#4251FF] h-[45px] rounded-[5px] text-black pl-2"
+                placeholder="ชื่อไฟล์สไลด์"
               ></input>
             </div>
             <div className="flex flex-col gap-3 h-[45px] w-[45px] items-center justify-center border-[#4251FF] border-2 rounded-[5px]">
@@ -58,7 +64,9 @@ export default function Createpopup() {
         </div>
       </div>
       <div className="flex items-center justify-center gap-[30px] mt-10">
-        <button className="bg-purple-600 p-2 rounded-[10px] w-30">
+        <button className="bg-purple-600 p-2 rounded-[10px] w-30" onClick={() => {
+          changeStatus(!status);
+        }}>
           ยกเลิก
         </button>
         <button className="bg-purple-600 p-2 rounded-[10px] w-30">สร้าง</button>

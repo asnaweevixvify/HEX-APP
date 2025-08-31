@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Page() {
   const [num, setNum] = useState([1, 2, 3]);
   return (
-    <div className="w-[50vw] flex flex-col gap-[30px]">
+    <div className="w-[50vw] flex flex-col gap-[30px] mt-20">
       <input
         type="text"
         placeholder="🔍 ค้นหาคลาส"
@@ -15,7 +15,7 @@ export default function Page() {
       <div className="w-[100%] bg-white h-[60vh] rounded-2xl flex flex-col p-5 gap-5">
         <h1 className="text-black text-2xl">ถังขยะ</h1>
         <div className="flex flex-col justify-center items-center gap-4">
-          <Image src={"/ถังขยะว่าง.png"} width={200} height={200}></Image>
+          <Image src={"/ถังขยะว่าง.png"} width={200} height={200} alt="bin"></Image>
           <h1 className="text-black text-xl">ถังขยะว่างเปล่า</h1>
         </div>
       </div>
