@@ -1,7 +1,7 @@
 .regiscontainer{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 200px;
 }
 .regiscontainer img{
     display: flex;
