@@ -26,12 +26,12 @@ export default function page() {
             BEGINER
           </button>
         </Link>
-        <Link href={"/challenge/selectlesson"}>
+        <Link href={`/challenge/selectlesson/${id}`}>
           <button className="bg-green-500 p-5 text-3xl rounded-2xl">
             INTERMEDIATE
           </button>
         </Link>
-        <Link href={"/challenge/selectlesson"}>
+        <Link href={`/challenge/selectlesson/${id}`}>
           <button className="bg-green-500 p-5 text-3xl rounded-2xl">
             ADVANCED
           </button>
