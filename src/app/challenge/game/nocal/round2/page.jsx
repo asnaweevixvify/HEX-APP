@@ -28,31 +28,31 @@ export default function page() {
       </div>
       <div className="flex justify-center items-center gap-10">
         <div className="border-2 border-green-600 p-3 rounded-2xl h-70 flex items-center">
-          <Image src={"/ex3.png"} width={500} height={150} alt="img"></Image>
+          <Image src={"/ex1.png"} width={500} height={150} alt="img"></Image>
         </div>
         <div className="flex flex-col justify-center items-center gap-5">
           <div className="w-[450px] h-[100px] border-2 border-green-500 flex justify-center items-center">
             <h1 className="text-green-600 text-2xl">Answer....</h1>
           </div>
           <div className="flex justify-center items-center gap-13">
-            <div className="border-2 border-green-600 w-[200px] h-[50px] flex justify-center items-center">
-              <h1 className="text-black text-center">2.61</h1>
+            <div className="border-2 border-green-600 w-[200px] h-[50px]">
+              <Image src={"/a1.png"} width={200} height={50} alt="img"></Image>
             </div>
-            <div className="border-2 border-green-600 w-[200px] h-[50px] flex justify-center items-center">
-              <h1 className="text-black text-center">2.51</h1>
+            <div className="border-2 border-green-600 w-[200px] h-[50px]">
+              <Image src={"/b1.png"} width={200} height={50} alt="img"></Image>
             </div>
           </div>
           <div className="flex justify-center items-center gap-13">
-            <div className="border-2 border-green-600 w-[200px] h-[50px] flex justify-center items-center">
-              <h1 className="text-black text-center">20</h1>
+            <div className="border-2 border-green-600 w-[200px] h-[50px]">
+              <Image src={"/c1.png"} width={200} height={50} alt="img"></Image>
             </div>
-            <div className="border-2 border-green-600 w-[200px] h-[50px] flex justify-center items-center">
-              <h1 className="text-black text-center">10</h1>
+            <div className="border-2 border-green-600 w-[200px] h-[50px]">
+              <Image src={"/d1.png"} width={200} height={50} alt="img"></Image>
             </div>
           </div>
         </div>
       </div>
-      <Link href={"/challenge/game/round4"}>
+      <Link href={"/challenge/game/nocal/round3"}>
         <GrLinkNext
           style={{
             color: "black",

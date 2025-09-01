@@ -62,7 +62,7 @@ export default function page() {
         </div>
       </div>
       <div className="">
-        <Link href={"/challenge/game/round5"}>
+        <Link href={"/challenge/game/cal/round5"}>
           <GrLinkNext
             style={{
               color: "black",

@@ -52,7 +52,7 @@ export default function page() {
           </div>
         </div>
       </div>
-      <Link href={"/challenge/game/round3"}>
+      <Link href={"/challenge/game/nocal/round2"}>
         <GrLinkNext
           style={{
             color: "black",
